@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cf2b167d3e584b5dbac8965474945a26" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.addproduct" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.adminlogin" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.productbrand" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.producttype" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagram" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_addproduct_productbrand" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_addproduct_producttype" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.tltemporary" Width="1.5" PointX="5.25" PointY="1.625" />
+        <EntityTypeShape EntityType="Model.orderdetail" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.tblmainOrder" Width="1.5" PointX="3" PointY="10.375" />
+        <AssociationConnector Association="Model.FK_orderdetail_addproduct" />
+        <AssociationConnector Association="Model.FK_orderdetail_tblmainOrder" />
+        <AssociationConnector Association="Model.FK_tltemporary_addproduct" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

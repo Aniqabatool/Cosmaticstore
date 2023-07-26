@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="headerfooter.master.cs" Inherits="cosmaticstore029.headerfooter" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Admin panal</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> 
+    <link href="css/headerstylesheet.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  
+  <nav runat="server" id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="home.aspx">Anee's store</a>
+  <button class="navbar-toggler menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse  " id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="home.aspx">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="Adminlist.aspx">Admin managment</a>
+      </li>
+        <li class="nav-item ">
+        <a class="nav-link" href="productlist.aspx">Product managment</a>
+      </li>
+         <li class="nav-item ">
+        <a class="nav-link" href="brandlist.aspx">Brand managment</a>
+      </li>
+          <li class="nav-item ">
+        <a class="nav-link" href="typelist.aspx">Type managment</a>
+      </li>
+
+ 
+    </ul>
+      <div class="ms auto">
+                  <a style="" class="nav-link" href="logout.aspx">Logout<span class="sr-only">(current)</span></a>
+
+      </div>
+     
+     
+   
+  </div>
+</nav>
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                         </asp:ContentPlaceHolder>
+
+
+     
+            
+        </div>
+
+</body>
+</html>
